@@ -54,7 +54,7 @@ input[type="button"] {
 }
 
 .obs {
-	font-size: 50%;
+	font-size: 60%;
 	padding-top: 10%;
 }
 
@@ -155,7 +155,7 @@ blockquote {
 	height: auto;
 	max-height: 70% !important;
 	margin: 0% !important;
-	font-size: 3.7vh;
+	font-size: 3.9vh;
 	line-height: 1.5em;
 	height: 100%;
 	padding-bottom: 2% !important;
@@ -215,7 +215,7 @@ blockquote {
 	min-height: 80vh;
 	text-align: justify;
 	font-family: "Courier New", Courier, monospace;
-	font-size: 3.8vh;
+	font-size: 4vh;
 	color: cornsilk;
 	text-shadow: crimson;
 	display: flex;
