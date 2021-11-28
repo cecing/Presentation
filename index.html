@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentación - PFE 2022</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/blood
+		.css">
+		
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+		<!-- iconos-->
+		<script src="https://kit.fontawesome.com/ecf26e7559.js" crossorigin="anonymous"></script>
+
+		<!--my style-->
+		<link rel="stylesheet" href="css/mystyle.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<!-- Slide 1-->
+				<section data-transition="fade-out" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)" data-background-image="images/pexels-pied-piper-1468419.jpg" data-background-opacity="0.2" data-background-size="cover">
+					<h3>Hola.</h3>
+					<h3>Mi nombre es Cecilia</h3>
+					<h3>Podes decirme tu nombre?</h3>
+					<h3><input type="text" id="nombre" class="reveal h3"><input type="button" class="reveal h4" value="Decir" onclick="guardar()"></h3>
+					<div class="r-hstack justify-center">
+						<div class="box color1" data-id="box1"></div>
+						<div class="box color2" data-id="box2"></div>
+						<div class="box color3" data-id="box3"></div>
+						<div class="box color4" data-id="box3"></div>
+					</div>
+					<p class="obs"> [ En la esquina inferior derecha se indica cómo ir avanzando en la presentación ]</p>
+				</section>
+
+<!-- Slide 2-->
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)" data-transition="concave-in slide-out">
+					<input class="reveal h3" id="mostrarNom" type="text" readonly="readonly" ></input>
+					<h4>cómo estás?</h4>
+					<div class="r-hstack">
+						<form style="height:180;">
+							<select id="estado" onchange="readURL()">
+									<option value="0" disabled selected>Estoy...</option>
+									<option value="1">Muy Bien</option>
+									<option value="2">Bien</option>
+									<option value="3">Con sueño</option>
+									<option value="4">Tranquil&#64;</option>
+									<option value="5">Concentrad&#64;</option>
+							</select>
+						</form>
+							<img id="miImagen" src="images/transparente.png">
+					</div>
+					<div class="r-hstack justify-center">
+						<div class="color1 bigBox" data-id="box1" data-auto-animate-delay="0"></div>
+						<div class="color2 bigBox" data-id="box2" data-auto-animate-delay="0.1" ></div>
+						<div class="color3 bigBox" data-id="box3" data-auto-animate-delay="0.2"></div>
+						<div class="color4 bigBox" data-id="box3" data-auto-animate-delay="0.2"></div>
+					</div>
+				</section>
+
+<!-- Slide 3-->
+				<section data-background-color="#30313f" data-background-transition="zoom" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div class="littleBox color1" data-id="box1" style="margin: 20px;"></div>
+						<div class="littleBox color2" data-id="box2" style="margin-left: 45px;"></div>
+						<div class="littleBox color3" data-id="box3" style="margin-left: 70px;"></div>
+						<div class="littleBox color4"  data-id="box3" style="margin-left: 95px;"></div>
+					</div>
+					<h4 id="neumo">Mediante esta presentación te cuento que deseo ser parte del PFE 2022</h4>
+					<!--animación-->
+					<div style="padding-top: 2%;">
+						<svg id="preloader" width="240px" height="120px" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+						  L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
+							  <animate attributeName="stroke-dasharray" from="500, 50" to="450 50" begin="0s" dur="2s" repeatCount="indefinite" />
+							  <animate attributeName="stroke-dashoffset" from="-40" to="-540" begin="0s" dur="2s" repeatCount="indefinite" />
+							</path>
+							<path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z"></path>
+							<path id="socket" d="M7.5,0c0,8.28-6.72,15-15,15l0-30C0.78-15,7.5-8.28,7.5,0z">
+							  <animateMotion
+								dur="2s"
+								repeatCount="indefinite"
+								rotate="auto"
+								keyTimes="0;1"
+								keySplines="0.42, 0.0, 0.58, 1.0"
+							  >
+								<mpath xlink:href="#loop-offset"/>
+							  </animateMotion>
+							</path>
+						  <path id="plug" d="M0,9l15,0l0-5H0v-8.5l15,0l0-5H0V-15c-8.29,0-15,6.71-15,15c0,8.28,6.71,15,15,15V9z">
+							<animateMotion
+							  dur="2s"
+								rotate="auto"
+								repeatCount="indefinite"
+								keyTimes="0;1"    
+								keySplines="0.42, 0, 0.58, 1"
+							>
+							  <mpath xlink:href="#loop-normal"/>
+							</animateMotion>
+						  </path>
+						  </svg>
+					</div>
+				</section>
+
+<!-- Slide 4-->
+				<section data-background-transition="slide" id="slide4" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.100, 0.175, 1.000)">
+					<p>Realizo cursos habitualmente ya que me gusta conocer o profundizar temas.
+					Este aprendizaje me da un modo de pensamiento diferente y me permite conocer alternativas para aplicar en resolución de problemas y procesos actuales o nuevos, tanto en mi ámbito laboral como personal.
+					</p>
+					<p>Dicho de otro modo, <b>crecer</b></p>
+					<!-- balls and draw -->
+					<div class="r-stack">
+						<div class="imagenSvg">
+							<img src="images/undraw_graduation_re_gthn.svg"></img>
+						</div>
+						<div class="ball color1" style="margin-left: 20px;"></div>
+						<div class="ball ball-2 color2" style="margin-left: 45px;"></div>
+						<div class="ball ball-3 color3" style="margin-left: 70px;"></div>
+						<div class="ball color4" style="margin-left: 95px;"></div>
+					</div>
+				</section>
+
+<!-- Slide 5-->
+				<section data-background-transition="convex" data-auto-animate data-auto-animate-easing="cubic-bezier(0.470, 0.400, 0.475, 1.500)">
+					<div class="r-stack">
+						<div class="color1 señal1" data-id="box1" style="margin-right: 20px;"></div>
+						<div class="color2 señal1 señal2" data-id="box2" style="margin-right: 45px;"></div>
+						<div class="color3 señal1 señal3" data-id="box3" style="margin-right: 70px;"></div>
+						<div class="color4 señal1 señal4" data-id="box3" style="margin-right: 95px;"></div>
+					</div>
+					<p>Este año comencé un curso de JavaScript inicial.</p>
+					<p>Elegí programación, un mundo nuevo para mi, porque la tecnología es parte de nuestra vida y creo que será una habilidad clave en lo que viene.</p>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						for (i == periodo-1; i > periodo-5; i--){
+							let consumosAnt += consumo(i);
+							if (consumosAnt <= 10){
+								lectAFacturar = lect;
+							}
+							else {
+								...
+							}
+					</code></pre>
+				</section>
+
+<!-- Slide 6-->
+				<section data-background-interactive data-auto-animate data-auto-animate-easing="cubic-bezier(.62,.04,.66,.9)">
+					<div  id="slide6" style="width: 80%; right: 0; box-shadow: 0 1px 4px rgba(16, 15, 19, 0.719), 0 5px 25px rgba(0, 0, 0, 0.356); background-color: rgba(19, 16, 36, 0.795); color: #fff; padding: 20px; font-size: 85%; text-align: left;" data-background-transition="zoom" data-background-transition="convex">
+						<h4>Quiero desarrollar mi carrera dentro del Grupo y ser parte de la transformación</h4>
+						<blockquote>
+							<p style="font-weight: 700; padding-top: 2px;">Algunos interrongantes, algunas ideas</p>
+							<ul>
+								<li>¿Todas las empresas utilizan el mismo sistema comercial?</li>
+								<li>¿Las Bases de Datos son uniformes? ¿Se pueden utilizar en forma agregada con procesos estandarizados?</li>
+								<li>¿Cómo será el mercado eléctrico si se reglamenta la Ley de Generación Distribuida? ¿El sistema comercial está preparado para gestionar Prosumidores?</li>
+								<li>¿El reporting habitual está automatizado o se realiza manualmente?</li>
+								<li>¿El Trabajo remoto y las herramientos de trabajo colaborativo serán parte de los nuevos desafío?</li>
+								<li>¿Los Términos y Condiciones de uso en sitio web y app consideran Leyes de Protección de Datos Personales y Derecho al Olvido?</li>
+								<li>...</li>
+							</ul>
+						</blockquote>
+					</div>
+					<div class="r-stack">
+						<div class="color1" data-id="box1" data-auto-animate-easing="cubic-bezier(.74,.4,.66,.9)" style="width: 25px; height: 25px; border-radius: 500px; margin: 25px;"></div>
+						<div class="color2" data-id="box2" data-auto-animate-easing="cubic-bezier(.4,.5,.78,1.12)" style="width: 20px; height: 20px; border-radius: 500px; margin-left: 55px;"></div>
+						<div class="color3" data-id="box3" data-auto-animate-easing="cubic-bezier(.17,.45,.99,.56)" style="width: 15px; height: 15px; border-radius: 500px; margin-left: 85px;"></div>
+						<div class="color4" data-id="box3" data-auto-animate-easing="cubic-bezier(.09,.59,.91,.7)" style="width: 20px; height: 20px; border-radius: 500px; margin-left: 105px;"></div>
+					</div>
+				</section>
+
+<!-- Slide 7-->
+			<section data-background-transition="concave" data-background-interactive data-auto-animate data-auto-animate-easing="cubic-bezier(.62,.04,.66,.9)">
+				<div class="r-stack" style="margin-left: 80%;">
+					<div class="color1 lineS7" data-id="box1" style="margin: 20px;"></div>
+					<div class="color2 lineS7 ballS7" data-id="box2" style="margin-left: 45px;"></div>
+					<div class="color3 lineS7" data-id="box3" style="margin-left: 70px;"></div>
+					<div class="color4 lineS7 ballS7" data-id="box3" style="margin-left: 95px;"></div>
+				</div>
+					<div class="border">
+						<p class="card">Aprender nos ayuda a pensar desde diferentes perspectivas y si esto lo hacemos en equipo la organización se Potencia.</p>
+						<p class="card">Por eso me gustaría tener la oportunidad de ser parte de ese equipo y complementar mis conocimientos actuales con este curso especializado en temáticas del rubro eléctrico, del Grupo y de Gestión.</p>
+				</div>
+			</section>
+
+			<section data-background-transition="slide">
+<!-- Slide 8-->
+				<section data-background-interactive data-auto-animate data-auto-animate-easing="cubic-bezier(.62,.04,.66,.9)">
+					<div class="r-stack">
+						<h2 style="z-index: 6;">The End</h2>
+						<div class="color1 disco1" data-id="box1"></div>
+						<div class="color2 disco1 disco2" data-id="box2"></div>
+						<div class="color3 disco1 disco3" data-id="box3"></div>
+						<div class="color4 disco1 disco4" data-id="box3"></div>
+					</div>
+					<p><b>Gracias por esta oportunidad</b></p>
+					<p style="font-size: 4vh; padding-top:6%; ">[ Si querés conocer cómo desarrollé este Proyecto, podes encontrar un pequeño detalle siguiendo la flecha ]</p>
+				</section>
+
+<!-- Slide 9-->
+				<section id="about" data-background-transition="concave" data-background-image="images/undraw_community_re_cyrm.svg" data-background-size="90%" data-background-opacity="0.1" >
+					<h3>About</h3>
+					<p>Este proyecto fue creado utilizando tecnologías que aprendí en cursos básicos de</p>
+					<div style="text-align: center;font-size: 140%;">
+						<i class="fab fa-html5" alt="Html5"></i>
+						<i class="fab fa-css3-alt" alt="CSS3"></i>
+						<i class="fab fa-js-square" alt="JS"></i>
+					</div>
+					<p>También implementé reveal.js y githug.com que fui conociendo durante este desarrollo.</p>
+					<p>Los recursos utilizados como imágenes, animaciones, íconos, entre otros, son libres.</p>
+					<p>Gracias a la comunidad colaborativa y open source.</p>
+					<p>Esta versión inicial de la presentación tiene oportunidades de mejora (optimizar código, SEO, ...) que por tiempo no pude realizar. </p>
+					<p>Todo comentario que deseen realizar y me ayude a mejorar y continuar aprendiendo será bienvenido.</p>
+				</section>
+			</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+
+<!--my scripts-->
+		<script>
+			function guardar() {
+				let nom = document.getElementById('nombre').value;
+				console.log(nom);
+				document.getElementById("mostrarNom").value = nom;
+			}
+		</script>
+
+	</body>
+
+	<script>
+        function readURL() {
+            let nucleo = document.getElementById('estado');
+            let i =  parseInt(nucleo.options[nucleo.selectedIndex].value);
+            console.log(i);
+            if (i==1){
+            document.getElementById('miImagen').src = "images/grinning-face.webp";
+            }
+            else if (i==2){
+                document.getElementById('miImagen').src = "images/slightly-smiling-face.webp";
+            }
+            else if (i==3){
+                document.getElementById('miImagen').src = "images/hot-beverage.webp";
+            }
+            else if (i==4){
+                document.getElementById('miImagen').src = "images/ok-hand-yellow.webp";
+            }
+            else if (i==5){
+                document.getElementById('miImagen').src = "images/nerd-face.webp";
+            }
+        }
+    </script>
+    </script>
+</html>
