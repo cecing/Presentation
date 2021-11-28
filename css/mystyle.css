@@ -155,7 +155,7 @@ blockquote {
 	height: auto;
 	max-height: 70% !important;
 	margin: 0% !important;
-	font-size: 3.9vh;
+	font-size: 3.72vh;
 	font-style: normal !important;
 	line-height: 1.5em;
 	height: 100%;
@@ -217,7 +217,8 @@ blockquote {
 	text-align: justify;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 4vh;
-	color: cornsilk;
+	font-weight: bolder;
+	color: #eee;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
